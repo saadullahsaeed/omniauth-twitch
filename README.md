@@ -12,7 +12,7 @@ Add the following line to your Gemfile:
 gem 'omniauth-twitch'
 ```
 
-Then `bundle install.
+Then `bundle install`.
 
 ## Usage
 
