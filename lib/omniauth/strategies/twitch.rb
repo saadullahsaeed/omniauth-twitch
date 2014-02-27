@@ -27,9 +27,10 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/user').parsed
+        access_token.options[:mode] = :query
+        # Twitch requires the token as a parameter named oauth_token
+        @raw_info ||= access_token.get('user', headers: {'Authorization' => 'OAuth ' + access_token.token}).parsed
       end
-
     end
   end
 end
