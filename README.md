@@ -9,7 +9,7 @@ Supports the authorization code flow as per https://github.com/justintv/Twitch-A
 Add the following line to your Gemfile:
 
 ```ruby
-gem 'omniauth-twitch'
+gem 'omniauth-twitch', git: 'git://github.com/adabei/omniauth-twitch.git'
 ```
 
 Then `bundle install`.
